@@ -1,21 +1,26 @@
 import React from 'react'
-import Home from './pages/Home'
-import TestList from './components/TestList'
+import TestList from './pages/TestList'
+import Mobile from './pages/Mobile'
+import '../src/index.css'
+
 
 const body = {
   marginLeft: "8%",
+  marginRight: "8%",
   marginTop: "2%",
   backgroundColor: "#fffaff",
+  justifyContent: "space-between"
 }
-const logo = {
-  borderRadius:"10px",
+const flex = {
+  display: "flex",
 }
 const App = () => {
   return (
     <div style={body}>
-   <img src="https://mobilekit.bragherstudio.com/assets/img/logo.png" style={logo} alt="logo" width="100px"/>
-   <Home />
+   <div style={flex}>
    <TestList/>
+   <Mobile/>
+   </div>
     </div>
   )
 }
