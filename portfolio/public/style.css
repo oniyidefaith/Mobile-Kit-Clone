@@ -1,11 +1,5 @@
 
-.search{
-    border-bottom: 1px solid black ;
-    visibility: hidden;
-    border-top: 0ch;
-    border-left: 0ch;
-    border-right: 0ch;
-}
+
 .hamburger{
     width: 50px;
     height: 100%;
@@ -18,7 +12,4 @@
     color: lightblue;
     padding-left: 10px;
     border-radius: 4px;
-}
-.search-icon{
-    color: slateblue;
 }
