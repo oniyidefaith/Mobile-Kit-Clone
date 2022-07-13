@@ -1,5 +1,7 @@
 import React from 'react'
 import '../App.css'
+import { useState } from 'react'
+import SearchBox from './SearchBox'
 
 
 const Navbar = () => {
@@ -13,31 +15,26 @@ const btnSearch = {
    color: "blue",
    cursor:"pointer",
    marginRight:"10px",
+   position:"relative",
+   zIndex:"2",
 }
-const bar ={
-  display: "block",
-  gap: "2px",
-  color: "blue",
-  paddingLeft: "10px",
-  borderRadius: "4px",
-}
-const hamburger={
-  width: "50px",
-  height: "100%",
-  margin: "30px 0px 20px 20px",
-  cursor: "pointer",
-}
+  const [inputField , setField] = useState('')
+
+  const Click  = () => {
+    setField(<SearchBox />)
+  }
+
   return (
     <div>
       <div style={flex}>
-        <div className='hamburger' style={hamburger}>       
-          <span className='bar' style={bar}></span>
-          <span className='bar' style={bar}></span>
-          <span className='bar' style={bar}></span>
+        <div className='hamburger'>       
+          <span className='bar' >-</span>
+          <span className='bar' >-</span>
+          <span className='bar' >-</span>
           </div>
-          <input type="text" name="hello" id="search" placeholder='search' className='search' />
-        <i class="fa fa-search" aria-hidden="true"style={btnSearch} />
-        </div>
+          <p>{inputField} {setField}</p>
+        <i class="fa fa-search" aria-hidden="true"style={btnSearch} onClick={Click} />
+    </div>
     </div>
   )
 }
