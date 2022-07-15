@@ -6,14 +6,14 @@ import SearchBar from './SearchBar'
 const SearchBox = () => {
 
   const [search , setDrop] =useState( 
+    function close () {
+      setDrop('')
+     },
     <SearchBar search={search} setDrop={setDrop} close={close}/>
   )
-   const close = () => {
-    setDrop('')
-   }
   return (
     <div>
- 
+
     </div>
   )
 }
