@@ -2,18 +2,21 @@ import React from 'react'
 import { useState } from 'react'
 import SearchBar from './SearchBar'
 
-
 const SearchBox = () => {
 
-  const [search , setDrop] =useState( 
-    function close () {
-      setDrop('')
-     },
-    <SearchBar search={search} setDrop={setDrop} close={close}/>
-  )
+  const [search , setSearch] =useState(<SearchBar/>)
+  function close () {
+    setSearch('')
+    
+   }
+  
+  //  function closed (){
+  //   setSearch("")
+  //  }
+   
   return (
     <div>
-
+      {search} {close}
     </div>
   )
 }

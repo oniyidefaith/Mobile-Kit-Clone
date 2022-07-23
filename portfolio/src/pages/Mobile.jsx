@@ -1,5 +1,8 @@
 import React from 'react'
+import Notification from '../components/Notification'
 import Navbar from '../components/Navbar'
+import 'animate.css';
+import MobileBody from './MobileBody'
 
 const Case = {
   // marginTop:"5%",
@@ -22,7 +25,7 @@ const container ={
 const content = {
   border:"solid black 10px",
   borderRadius:"20px",
-  backgroundColor:"#fff",
+  backgroundColor:"#F9F9F9",
   color:"#8292A6",
   width:"380px",
   height:"630px",
@@ -35,7 +38,9 @@ const Mobile = () => {
       <div style={Case} className="case">
         <div style={container} className="container">
           <div style={content} className='content-mobile'>
+            <Notification/>
             <Navbar />
+            <MobileBody/>
           </div>
         </div>
       </div>

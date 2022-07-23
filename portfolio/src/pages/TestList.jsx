@@ -58,10 +58,10 @@ const TestList = () => {
          <img src={img1} style={logo} alt="logo" width="100px"/>
         <h1 style={head}>Bootstrap 5 Based Mobile UI Kit  HTML Template</h1>
       <ul style={list}>
-        <li><ion-icon name="checkmark-outline" role="img" class="md hydrated" aria-label="checkmark outline"></ion-icon>PWA Ready</li>
-        <li><ion-icon name="checkmark-outline" role="img" class="md hydrated" aria-label="checkmark outline"></ion-icon>Bootstrap 5 Based</li>
-        <li><ion-icon name="checkmark-outline" role="img" class="md hydrated" aria-label="checkmark outline"></ion-icon>Dark/Light Mood</li>
-        <li><ion-icon name="checkmark-outline" role="img" class="md hydrated" aria-label="checkmark outline"></ion-icon>Reusable Component</li>
+        <li><ion-icon name="checkmark-outline" role="img" className="md hydrated" aria-label="checkmark outline"></ion-icon>PWA Ready</li>
+        <li><ion-icon name="checkmark-outline" role="img" className="md hydrated" aria-label="checkmark outline"></ion-icon>Bootstrap 5 Based</li>
+        <li><ion-icon name="checkmark-outline" role="img" className="md hydrated" aria-label="checkmark outline"></ion-icon>Dark/Light Mood</li>
+        <li><ion-icon name="checkmark-outline" role="img" className="md hydrated" aria-label="checkmark outline"></ion-icon>Reusable Component</li>
       </ul>
       </div>
       <div style={arrow}>

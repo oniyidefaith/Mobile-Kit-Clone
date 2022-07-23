@@ -1,6 +1,7 @@
 import React from 'react'
 import TestList from './pages/TestList'
 import Mobile from './pages/Mobile'
+import 'animate.css';
 import './App.css'
 
 
